@@ -1,5 +1,4 @@
-package Sniper'sRealms.managers;
-
+package snipersrealms.managers;
 public class PluginManager {
     private static PluginManager instance;
     

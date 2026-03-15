@@ -1,4 +1,4 @@
-package Sniper'sRealms.utils;
+package snipersrealms.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
