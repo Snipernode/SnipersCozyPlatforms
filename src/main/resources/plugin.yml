@@ -1,5 +1,43 @@
-main: snipersrealms.relams.across.the.server
-version: 1.0-beta
-name: Relams across the server
+main: TSD.Plot.PlatformsPlugin
+version: ${version}
+name: SnipersComfortablePlots
 author: Snipernode
 api-version: 1.21
+
+commands:
+  pfs:
+    description: Main command for survival plots
+    usage: |
+      §6=== SnipersComfortablePlots Help ===
+      §e/pfs §7- Teleport to your plot
+      §e/pfs <player|uuid> §7- Visit another player's plot
+      §e/pfs trust <player> §7- Trust a player to visit your plot
+      §e/pfs untrust <player> §7- Remove trust from a player
+      §e/pfs join <player> §7- Join a trusted player's plot
+      §e/pfs info [player|uuid] §7- Show plot details
+      §e/pfs trusted [player|uuid] §7- Show trusted players
+      §e/pfs where §7- Show the plot you're standing in
+      §e/pfs market §7- Marketplace help and currency info
+      §e/pfs shop create <price> <amount> §7- Register the chest you're looking at as a store chest
+      §e/pfs shop info §7- View store chest info
+      §e/pfs shop remove §7- Remove the store chest you're looking at
+      §e/pfs shop collect §7- Collect your store earnings
+    aliases: [plot, survivalplot]
+    permission: snipersplots.use
+  plotadmin:
+    description: Admin command for plot teleport + UUID/name translation
+    usage: |
+      /plotadmin <player|uuid>
+      /plotadmin name <uuid>
+      /plotadmin uuid <player>
+    permission: snipersplots.admin
+  
+permissions:
+  snipersplots.use:
+    description: Allows use of all basic plot commands
+    default: true
+  snipersplots.admin:
+    description: Allows use of administrative plot commands
+    default: op
+    children:
+      snipersplots.use: true

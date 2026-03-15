@@ -1,0 +1,79 @@
+# SnipersComfortablePlots Configuration
+
+# Plot Settings
+plots:
+    # Default plot size (width x length)
+    default-size: 50
+    # Height limits for plots
+    height:
+        min: 0
+        max: 256
+    # Border block type
+    border-block: STONE_BRICK
+    # Road settings
+    road:
+        enable: true
+        block: STONE_SLAB
+        width: 3
+
+# Plot Claiming Settings
+claiming:
+    # Maximum plots per player
+    max-plots-per-player: 5
+    # Cost to claim a plot (if economy is enabled)
+    claim-cost: 100
+    
+# Protection Settings
+protection:
+    # List of blocks players can't place in plots
+    blocked-blocks:
+        - TNT
+        - LAVA_BUCKET
+    # Allow fire spread in plots
+    allow-fire-spread: false
+    
+# Messages
+messages:
+    plot-claimed: "&aSuccessfully claimed plot!"
+    plot-limit-reached: "&cYou've reached your plot limit!"
+    no-permission: "&cYou don't have permission to do this!"
+    teleport-own-title: "&aYour Plot"
+    teleport-own-subtitle: "&7Welcome back, %owner%"
+    teleport-visit-title: "&b%owner%'s Plot"
+    teleport-visit-subtitle: "&7Comfortable landing engaged"
+    enter-own-plot: "&aEntering your plot"
+    enter-other-plot: "&bEntering %owner%'s plot"
+    boundary-hit: "&cBoundary reached. Returning to %owner%'s origin."
+
+# Visual and audio polish
+effects:
+    teleport:
+        enabled: true
+        particles: true
+        sound: true
+        titles: true
+    transitions:
+        enabled: true
+        particles: true
+        sound: true
+    boundary:
+        enabled: true
+        sound: true
+
+# Physical marketplace chest shops
+marketplace:
+    enabled: true
+    currency: EMERALD
+    shop-range: 6
+    balances: {}
+    shops: {}
+
+# Database Settings
+database:
+    type: SQLITE # or MYSQL
+    mysql:
+        host: localhost
+        port: 3306
+        database: plots
+        username: root
+        password: password

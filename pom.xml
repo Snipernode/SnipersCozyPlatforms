@@ -4,12 +4,13 @@
             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>snipersrealms</groupId>
-    <artifactId>Relams.across.the.server</artifactId>
-    <version>1.0-beta</version>
+    <groupId>TSD.Plot</groupId>
+    <artifactId>SnipersComfortablePlots</artifactId>
+    <version>9.2</version>
+    <packaging>jar</packaging>
     
-    <name>Relams across the server</name>
-    <url>https://www.patreon.com/SnipersDrawer</url>
+    <name>SnipersComfortablePlots</name>
+    <url>http://www.example.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,7 +29,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.21.10-R0.1-SNAPSHOT</version>
+            <version>1.21.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -38,8 +39,9 @@
         <resources>
             <resource>
                 <directory>${project.basedir}/src/main/resources</directory>
+                <!-- Include all resource files (plugin.yml, config.yml, etc.) -->
                 <includes>
-                    <include>plugin.yml</include>
+                    <include>**/*</include>
                 </includes>
             </resource>
         </resources>

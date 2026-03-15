@@ -1,4 +1,40 @@
 {
+    "cSpell.words": [
+        "Bukkit",
+        "cooldown",
+        "Cooldown",
+        "mineshafts",
+        "overworld",
+        "skyblock",
+        "Skyblock",
+        "Snipernode",
+        "spigotmc",
+        "survivalplot",
+        "survivalplots",
+        "unparryable"
+    ],
+    // Java home setting for VS Code
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "G:\\Coding\\Java\\jdk-21",
+            "default": true
+        }
+    ],
+    // Maven settings
+    "maven.executable.path": "G:\\Coding\\maven-mvnd-1.0.3-windows-amd64\\maven-mvnd-1.0.3-windows-amd64\\mvn\\bin\\mvn.cmd",
+    "maven.executable.preferMavenWrapper": false,
+    "maven.terminal.useJavaHome": true,
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "JAVA_HOME",
+            "value": "G:\\Coding\\Java\\jdk-21"
+        },
+        {
+            "environmentVariable": "PATH",
+            "value": "G:\\Coding\\maven-mvnd-1.0.3-windows-amd64\\maven-mvnd-1.0.3-windows-amd64\\mvn\\bin;${env:PATH}"
+        }
+    ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "interactive"
 }
